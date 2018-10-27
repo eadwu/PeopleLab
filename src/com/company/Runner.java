@@ -10,13 +10,13 @@ public class Runner {
     public static void main(String[] args) {
 
         Teacher teacher = new Teacher("Orange","Pineapple","The Art of Failure","Mrs");
-        Student[] students = new Student[36];
+        Student[] students = new Student[23];
 
         /*
         The Teacher statement creates a new Teacher with the parameters that we specified in our other classes.
          */
 
-        for(int i = 0; i < 36;i++)
+        for(int i = 0; i < students.length;i++)
         {
             students[i] = randomStudent();
        }

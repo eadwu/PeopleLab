@@ -30,13 +30,8 @@ public class Classroom {
     }
 
     public void fillSeats() {
-        int k = 0;
-            for (int i = 0; i < seatingChart.length; i++) {
-                for (int a = 0; a < seatingChart[i].length; a++) {
-                    seatingChart[i][a] = students[k];
-                    k++;
-                    System.out.println(seatingChart[i][a]);
-                }
+        for (int i = 0; i < this.students.length; i++) {
+            this.seatingChart[i / 6][i % 6] = this.students[i];
         }
     }
 
